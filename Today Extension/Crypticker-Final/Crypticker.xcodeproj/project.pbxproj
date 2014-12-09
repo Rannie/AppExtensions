@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047E95591A36D2BD00EB6D79 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331C02C19677E9000FBA23E /* NotificationCenter.framework */; };
+		047E955E1A36D2BD00EB6D79 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E955D1A36D2BD00EB6D79 /* TodayViewController.swift */; };
+		047E95601A36D2BD00EB6D79 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047E955F1A36D2BD00EB6D79 /* MainInterface.storyboard */; };
+		047E95631A36D2BD00EB6D79 /* BTC Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047E95581A36D2BD00EB6D79 /* BTC Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		047E95671A36D2E900EB6D79 /* CryptoCurrencyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DA61891965E3A600E97CC3 /* CryptoCurrencyKit.framework */; };
+		047E95681A36D41600EB6D79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DA616E1965E33100E97CC3 /* Images.xcassets */; };
 		07DA61681965E33100E97CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA61671965E33100E97CC3 /* AppDelegate.swift */; };
 		07DA616A1965E33100E97CC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA61691965E33100E97CC3 /* ViewController.swift */; };
 		07DA616D1965E33100E97CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DA616B1965E33100E97CC3 /* Main.storyboard */; };
@@ -33,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		047E95611A36D2BD00EB6D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DA615A1965E33100E97CC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047E95571A36D2BD00EB6D79;
+			remoteInfo = "BTC Widget";
+		};
 		07DA61751965E33100E97CC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07DA615A1965E33100E97CC3 /* Project object */;
@@ -88,6 +101,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				047E95631A36D2BD00EB6D79 /* BTC Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +109,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		047E95581A36D2BD00EB6D79 /* BTC Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BTC Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047E955C1A36D2BD00EB6D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047E955D1A36D2BD00EB6D79 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		047E955F1A36D2BD00EB6D79 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		07DA61621965E33100E97CC3 /* Crypticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DA61661965E33100E97CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07DA61671965E33100E97CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +145,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		047E95551A36D2BD00EB6D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047E95671A36D2E900EB6D79 /* CryptoCurrencyKit.framework in Frameworks */,
+				047E95591A36D2BD00EB6D79 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA615F1965E33100E97CC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +187,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047E955A1A36D2BD00EB6D79 /* BTC Widget */ = {
+			isa = PBXGroup;
+			children = (
+				047E955D1A36D2BD00EB6D79 /* TodayViewController.swift */,
+				047E955F1A36D2BD00EB6D79 /* MainInterface.storyboard */,
+				047E955B1A36D2BD00EB6D79 /* Supporting Files */,
+			);
+			path = "BTC Widget";
+			sourceTree = "<group>";
+		};
+		047E955B1A36D2BD00EB6D79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047E955C1A36D2BD00EB6D79 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		07DA61591965E33100E97CC3 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +212,7 @@
 				07DA61771965E33100E97CC3 /* CryptickerTests */,
 				07DA618A1965E3A600E97CC3 /* CryptoCurrencyKit */,
 				07DA61971965E3A600E97CC3 /* CryptoCurrencyKitTests */,
+				047E955A1A36D2BD00EB6D79 /* BTC Widget */,
 				8331C02B19677E9000FBA23E /* Frameworks */,
 				07DA61631965E33100E97CC3 /* Products */,
 			);
@@ -179,6 +225,7 @@
 				07DA61741965E33100E97CC3 /* CryptickerTests.xctest */,
 				07DA61891965E3A600E97CC3 /* CryptoCurrencyKit.framework */,
 				07DA61931965E3A600E97CC3 /* CryptoCurrencyKitTests.xctest */,
+				047E95581A36D2BD00EB6D79 /* BTC Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,6 +356,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		047E95571A36D2BD00EB6D79 /* BTC Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047E95661A36D2BD00EB6D79 /* Build configuration list for PBXNativeTarget "BTC Widget" */;
+			buildPhases = (
+				047E95541A36D2BD00EB6D79 /* Sources */,
+				047E95551A36D2BD00EB6D79 /* Frameworks */,
+				047E95561A36D2BD00EB6D79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BTC Widget";
+			productName = "BTC Widget";
+			productReference = 047E95581A36D2BD00EB6D79 /* BTC Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		07DA61611965E33100E97CC3 /* Crypticker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07DA617E1965E33100E97CC3 /* Build configuration list for PBXNativeTarget "Crypticker" */;
@@ -324,6 +388,7 @@
 			dependencies = (
 				07DA619D1965E3A600E97CC3 /* PBXTargetDependency */,
 				07DA61A11965E3A600E97CC3 /* PBXTargetDependency */,
+				047E95621A36D2BD00EB6D79 /* PBXTargetDependency */,
 			);
 			name = Crypticker;
 			productName = Crypticker;
@@ -394,6 +459,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
+					047E95571A36D2BD00EB6D79 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					07DA61611965E33100E97CC3 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -427,11 +495,21 @@
 				07DA61731965E33100E97CC3 /* CryptickerTests */,
 				07DA61881965E3A600E97CC3 /* CryptoCurrencyKit */,
 				07DA61921965E3A600E97CC3 /* CryptoCurrencyKitTests */,
+				047E95571A36D2BD00EB6D79 /* BTC Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		047E95561A36D2BD00EB6D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047E95601A36D2BD00EB6D79 /* MainInterface.storyboard in Resources */,
+				047E95681A36D41600EB6D79 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA61601965E33100E97CC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +543,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		047E95541A36D2BD00EB6D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047E955E1A36D2BD00EB6D79 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA615E1965E33100E97CC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +595,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		047E95621A36D2BD00EB6D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047E95571A36D2BD00EB6D79 /* BTC Widget */;
+			targetProxy = 047E95611A36D2BD00EB6D79 /* PBXContainerItemProxy */;
+		};
 		07DA61761965E33100E97CC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07DA61611965E33100E97CC3 /* Crypticker */;
@@ -548,6 +639,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		047E95641A36D2BD00EB6D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BTC Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		047E95651A36D2BD00EB6D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BTC Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		07DA617C1965E33100E97CC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Crypticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Crypticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +886,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		047E95661A36D2BD00EB6D79 /* Build configuration list for PBXNativeTarget "BTC Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047E95641A36D2BD00EB6D79 /* Debug */,
+				047E95651A36D2BD00EB6D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		07DA615D1965E33100E97CC3 /* Build configuration list for PBXProject "Crypticker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
