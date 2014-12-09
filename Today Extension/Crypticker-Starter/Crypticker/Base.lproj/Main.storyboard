@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RGS-Un-Kbb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Wid-MF-b1j">
+            <objects>
+                <viewController id="RGS-Un-Kbb" customClass="ViewController" customModule="Crypticker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLN-KH-ceD"/>
+                        <viewControllerLayoutGuide type="bottom" id="N8d-jL-oUz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BJL-5U-bOE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue 6/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-tP-cZj">
+                                <rect key="frame" x="267" y="363" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUT-nY-uFe" customClass="JBLineChartView">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XSX-Lf-NEr">
+                                        <variation key="heightClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact"/>
+                                <variation key="heightClass=compact-widthClass=regular"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="595.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yI-ON-F4e">
+                                <rect key="frame" x="262" y="326" width="77" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-6D-I8Y">
+                                <rect key="frame" x="266" y="128" width="69" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75000000000000022" translatesAutoresizingMaskIntoConstraints="NO" id="cYe-Kf-cIj">
+                                <rect key="frame" x="222" y="25" width="156" height="92"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.42352941179999998" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QQz-tP-cZj" firstAttribute="centerX" secondItem="7yI-ON-F4e" secondAttribute="centerX" id="0gs-Dr-rXL">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="YUT-nY-uFe" firstAttribute="top" secondItem="QQz-tP-cZj" secondAttribute="bottom" constant="16" id="4Ln-Gs-sja">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="N8d-jL-oUz" firstAttribute="top" secondItem="YUT-nY-uFe" secondAttribute="bottom" id="8Z6-Cc-zeg"/>
+                            <constraint firstItem="WyO-6D-I8Y" firstAttribute="centerX" secondItem="cYe-Kf-cIj" secondAttribute="centerX" constant="0.5" id="8sa-1R-NML">
+                                <variation key="heightClass=compact" constant="0.5"/>
+                            </constraint>
+                            <constraint firstItem="WyO-6D-I8Y" firstAttribute="top" secondItem="cYe-Kf-cIj" secondAttribute="bottom" constant="11" id="BPE-AU-QKH">
+                                <variation key="heightClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="YUT-nY-uFe" secondAttribute="trailing" id="D0g-tZ-RNp"/>
+                            <constraint firstItem="cYe-Kf-cIj" firstAttribute="top" secondItem="SLN-KH-ceD" secondAttribute="bottom" constant="5" id="FBy-Fr-xEM">
+                                <variation key="heightClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="cYe-Kf-cIj" secondAttribute="centerX" id="J2D-Oq-00h">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="QQz-tP-cZj" firstAttribute="top" secondItem="7yI-ON-F4e" secondAttribute="bottom" constant="8" id="OSK-KQ-t2O">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="YUT-nY-uFe" firstAttribute="leading" secondItem="BJL-5U-bOE" secondAttribute="leading" id="SXc-kv-OCs"/>
+                            <constraint firstItem="YUT-nY-uFe" firstAttribute="centerX" secondItem="QQz-tP-cZj" secondAttribute="centerX" constant="-0.5" id="qOp-u9-vfY">
+                                <variation key="heightClass=compact" constant="-0.5"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayLabel" destination="QQz-tP-cZj" id="o3z-Fa-AzD"/>
+                        <outlet property="lineChartView" destination="YUT-nY-uFe" id="YIF-Gs-g6C"/>
+                        <outlet property="priceChangeLabel" destination="WyO-6D-I8Y" id="mIE-XU-tFa"/>
+                        <outlet property="priceLabel" destination="cYe-Kf-cIj" id="cwk-UO-icr"/>
+                        <outlet property="priceOnDayLabel" destination="7yI-ON-F4e" id="JGp-25-mGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXu-qg-fjK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682" y="285"/>
+        </scene>
+    </scenes>
+</document>
