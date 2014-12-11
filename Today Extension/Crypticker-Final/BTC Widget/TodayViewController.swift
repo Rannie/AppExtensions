@@ -83,7 +83,6 @@ class TodayViewController: CurrencyDataViewController, NCWidgetProviding {
     
     @IBAction func toggleOpenApp(sender: AnyObject) {
         let url = NSURL(string: "rannieTest://test")
-        
         extensionContext?.openURL(url!, completionHandler: nil)
     }
 }

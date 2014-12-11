@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14A389a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$592.12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDU-2g-ky0">
-                                <rect key="frame" x="16" y="8" width="62" height="21"/>
+                                <rect key="frame" x="16" y="8" width="62" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.56862745100000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOl-mk-AaN">
-                                <rect key="frame" x="224" y="8" width="44" height="21"/>
+                                <rect key="frame" x="224" y="8" width="44" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.52156862749999999" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,8 +48,12 @@
                                     <constraint firstAttribute="height" constant="98" id="nd9-io-Mhp"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-tG-YPr">
-                                <rect key="frame" x="129" y="4" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-tG-YPr">
+                                <rect key="frame" x="130" y="4" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5vh-JE-2ip"/>
+                                    <constraint firstAttribute="height" constant="30" id="61H-Mz-YxZ"/>
+                                </constraints>
                                 <state key="normal" title="打开应用">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,16 +64,18 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="eOl-mk-AaN" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="0QN-kX-uXN"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="khe-ay-Qvq" secondAttribute="bottom" priority="250" constant="106" id="23y-e1-mfW"/>
+                            <constraint firstItem="aDL-tG-YPr" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="4" id="5jk-98-t0L"/>
+                            <constraint firstItem="jDU-2g-ky0" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="BW9-fV-rpU"/>
+                            <constraint firstItem="eOl-mk-AaN" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="Dk9-qg-6fV"/>
                             <constraint firstItem="khe-ay-Qvq" firstAttribute="leading" secondItem="eOl-mk-AaN" secondAttribute="trailing" constant="8" id="G16-tk-j5L"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="5xf-aK-5en" secondAttribute="bottom" id="IUe-dy-XeA"/>
                             <constraint firstAttribute="trailing" secondItem="5xf-aK-5en" secondAttribute="trailing" id="Kys-NK-b3c"/>
                             <constraint firstAttribute="trailing" secondItem="khe-ay-Qvq" secondAttribute="trailing" id="Qi4-Yt-KoR"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="5xf-aK-5en" secondAttribute="bottom" id="RBm-L5-MP7"/>
                             <constraint firstItem="5xf-aK-5en" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="SB3-UP-3ZV"/>
-                            <constraint firstItem="jDU-2g-ky0" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="XUp-ZV-Szy"/>
+                            <constraint firstItem="khe-ay-Qvq" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="Sr8-Fs-h6Y"/>
                             <constraint firstItem="jDU-2g-ky0" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="e8k-TK-c2t"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="khe-ay-Qvq" secondAttribute="bottom" priority="250" constant="106" id="olm-MQ-oCp"/>
-                            <constraint firstItem="khe-ay-Qvq" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="wza-YY-7Z2"/>
+                            <constraint firstAttribute="centerX" secondItem="aDL-tG-YPr" secondAttribute="centerX" id="kCu-GO-bfK"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
